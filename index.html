@@ -4,31 +4,38 @@
         <meta charset="UTF-8">
         <title>Luz Saldana's Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/index.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Delius&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <h1>Luz Elena Angeles Saldana</h1>
-        <section id="About">
-            <h2>About</h2>
-                <p>Hi! I'm a gradute student from Wesleyan University. I'm currently learning JavaScript. I love my cats and ocassionally cook for pleasure.</p>
+        <h1 id="name-header">Luz Elena Angeles Saldana</h1>
+        <section id="about">
+            <img src="images/profile-picture.png"
+                alt="Luz Angeles Saldana Headshot"
+                id="profile-picture">
+            <h2 class="section-header">About</h2>
+                <p id="about-paragraph">Hi! I'm a gradute student from Wesleyan University. I'm currently learning JavaScript. I love my cats and ocassionally cook for pleasure.</p>
         </section>
 
-        <section id="Experience">
-            <h2>Experience</h2>
-                <ul>
-                    <li>Latin American Studies Degree</li>
-                    <li>JavaScript (beginner)</li>
+        <section id="experience">
+            <h2 class="section-header">Experience</h2>
+                <ul class="exp-container">
+                    <li class="one-experience">Latin American Studies Degree</li>
+                    <li class="one-experience">JavaScript (beginner)</li>
                 </ul>
         </section>
 
-        <section id="Connect">
-            <h2>Connect</h2>
+        <section id="connect">
+            <h2 class="section-header">Connect</h2>
                 <ul>
                     <li>
-                        <a href="https://www.linkedin.com/in/luz-e-angeles-saldana/" target="_blank" rel="noreferrer">My Linkedin</a>
+                        <a href="https://www.linkedin.com/in/luz-e-angeles-saldana/" target="_blank" rel="noreferrer"><img class="icon-image" src="images/linkedin-icon.png" alt="Clickeable Linkedin Icon"></a>
                     </li>
                     <li>
-                        <a href="https://github.com/luz-saldana/luz-saldana-jupiter" target="_blank" rel="noreferrer">My GitHub</a>
+                        <a href="https://github.com/luz-saldana/luz-saldana-jupiter" target="_blank" rel="noreferrer"><img class="icon-image" src="images/github-logo.png" alt="Clickeable Github Icon"></a>
                     </li>
                 </ul>
         </section>
