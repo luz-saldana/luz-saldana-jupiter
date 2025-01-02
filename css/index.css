@@ -7,20 +7,48 @@ body {
 
 #name-header {
     font-family: "Atma", serif;
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: 500;
     text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#navigation {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    background-color: beige;
+
+}
+
+#navigation ul {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    list-style: none;
+
+}
+
+#about, #experience, #skills, #projects, #connect {
+    scroll-margin-top: 3em;
 }
 
 #profile-picture {
-    box-sizing: border-box;
-    border-radius: 30%;
-    width: 400px;
-    padding: 30px;
+    border-radius: 70%;
+    width: 20em;
+    border-color: peru;
+    border-width: 2dvi;
+    border-style: groove;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #about-paragraph {
     text-align:center;
+    font-size: 1.5em;
 }
 
 h2 {
@@ -32,18 +60,40 @@ h2 {
 .section-header {
     background-color: #3cb5a1;
 }
-ul {
+
+section {
+    padding-bottom: 5em;
+}
+
+.exp-container {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+}
+
+.exp-item{
+    display: flex;
+    flex-direction: row;
+    background-color: burlywood;
+    padding: 1em;
+    width: 20em;
+}
+
+.one-experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-date {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+#connect ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1em;
-}
-.one-experience {
-    background-color: pink;
-    border-radius: 1em;
-    width: 20em;
-    padding: 10px;
+    gap: 4em;
 }
 
 .icon-image {
