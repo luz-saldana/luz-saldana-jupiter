@@ -7,11 +7,18 @@ body {
 
 #name-header {
     font-family: "Atma", serif;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 500;
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+/* media query for name-header */
+@media (max-width: 375px) {
+    #name-header {
+        font-size: 2rem;
+        color: #793d02;
+    }
 }
 
 #navigation {
@@ -25,10 +32,35 @@ body {
 
 #navigation ul {
     display: flex;
-    flex-direction: row;
     gap: 5em;
     list-style: none;
 
+}
+a {
+    color: #6a3207;
+}
+
+a:focus {
+    color: rgb(247, 0, 255);
+}
+
+a:hover {
+    color: firebrick;
+}
+
+/*Media query for navigation menu */
+@media (max-width: 425px) {
+    #navigation {
+        background-color: peru
+    }
+
+    #navigation ul {
+        /* this is the best i can do right now */
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: space-evenly;
+        padding: 0;
+    }
 }
 
 #about, #experience, #skills, #projects, #connect {
@@ -39,7 +71,7 @@ body {
     border-radius: 70%;
     width: 20em;
     border-color: peru;
-    border-width: 2dvi;
+    border-width: 1em;
     border-style: groove;
     display: block;
     margin-left: auto;
@@ -48,7 +80,7 @@ body {
 
 #about-paragraph {
     text-align:center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 h2 {
@@ -64,19 +96,27 @@ h2 {
 section {
     padding-bottom: 5em;
 }
+/*Media query for sections with phone view */
+@media (max-width: 375px) {
+    section {
+        padding-bottom: 1em;
+    }
+}
+
 
 .exp-container {
     flex-wrap: wrap;
     display: flex;
     gap: 10px;
+    justify-content: space-evenly;
 }
 
-.exp-item{
+.exp-item {
     display: flex;
     flex-direction: row;
     background-color: burlywood;
     padding: 1em;
-    width: 20em;
+    width: 30em;
 }
 
 .one-experience {
@@ -87,6 +127,15 @@ section {
 .exp-date {
     font-weight: bold;
     margin-right: 1em;
+}
+/*Media query for experience section/items with tablet view */
+@media (max-width: 768px) and (min-width: 426px) {
+    .exp-item {
+        background-color: #ea9fcb;
+    }
+    .exp-date {
+        font-style: italic;
+    }
 }
 
 #connect ul {
