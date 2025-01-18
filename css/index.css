@@ -36,6 +36,7 @@ body {
     list-style: none;
 
 }
+/* adding styling to navigation links*/
 a {
     color: #6a3207;
 }
@@ -105,18 +106,23 @@ section {
 
 
 .exp-container {
-    flex-wrap: wrap;
-    display: flex;
-    gap: 10px;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 40em));
+    grid-template-rows: auto auto;
+    justify-content: center;
+    /* flex-wrap: wrap;
+    display: flex; */
+    gap: 15px 15px;
 }
 
 .exp-item {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    background-color: burlywood;
+    background-color: rgb(223, 131, 11);
+    border-radius: 2em;
     padding: 1em;
-    width: 30em;
 }
 
 .one-experience {
@@ -128,6 +134,7 @@ section {
     font-weight: bold;
     margin-right: 1em;
 }
+
 /*Media query for experience section/items with tablet view */
 @media (max-width: 768px) and (min-width: 426px) {
     .exp-item {
