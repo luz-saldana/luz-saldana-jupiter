@@ -18,6 +18,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#connect">Connect</a></li>
+                <li><a href="#message-section">Message</a></li>
             </ul>
         </nav>
 
@@ -25,11 +26,11 @@
             <h1 id="name-header">Luz Elena Angeles Saldaña</h1>
         </div>
         <section id="about">
-            <img src="images/profile-picture.png"
-                alt="Luz Angeles Saldana Headshot"
-                id="profile-picture">
             <h2 class="section-header">About</h2>
             <div id="about-container">
+                <img src="images/profile-picture.png"
+                alt="Luz Angeles Saldana Headshot"
+                id="profile-picture">
                 <p id="about-paragraph">Hello and welcome! I'm a Mexican gradute student from Wesleyan University. I'm currently learning JavaScript, HTML and CSS. I have more than 3 cats (<em>guess the number...</em>), and I'm currently watching Haikyu!! and JoJos.</p>
             </div>
         </section>
@@ -41,7 +42,7 @@
                         <h3 class="exp-date">October 2023 - May 2024</h3>
                         <div class="one-experience">
                             <h3 class="one-exp-heading">Academic Tutor</h3>
-                            <p class="exp-description">Assisted students with homework and co-fascilitated engaging group activities for 20 children, like games to foster teamwork and encourage creativity.</p>
+                            <p class="exp-description">Assisted students with homework and co-fascilitated engaging group activities to foster teamwork and encourage creativity. </p>
                         </div>
                     </div>
                     <div class="exp-item">
@@ -62,7 +63,7 @@
                         <h3 class="exp-date">May 2021 - August 2021</h3>
                         <div class="one-experience">
                             <h3 class="one-exp-heading">Food Runner/ Cashier</h3>
-                            <p class="exp-description">Worked as a food runner and cashier at Chicago Waffles. Serving more than 15 customers per hour. Handled cash and card transactions. Additionl tasks: cleaning tables, refilling syrup containers, and taking out the trash.  </p>
+                            <p class="exp-description">Worked as a food runner and cashier at Chicago Waffles. Serving more than 15 customers per hour. Additionl tasks: cleaning tables, refilling syrup containers, and taking out the trash.  </p>
                         </div>
                     </div>
                 </div>
@@ -81,12 +82,41 @@
             <h2 class="section-header">Connect</h2>
                 <ul>
                     <li>
-                        <a href="https://www.linkedin.com/in/luz-e-angeles-saldana/" target="_blank" rel="noreferrer"><img class="icon-image" src="images/linkedin-icon.png" alt="Clickeable Linkedin Icon"></a>
+                        <a href="https://www.linkedin.com/in/luz-e-angeles-saldana/" target="_blank" rel="noreferrer"><img class="icon-image" src="images/linkedin-vector.png" alt="Clickeable Linkedin Icon"></a>
                     </li>
                     <li>
-                        <a href="https://github.com/luz-saldana/luz-saldana-jupiter" target="_blank" rel="noreferrer"><img class="icon-image" src="images/github-logo.png" alt="Clickeable Github Icon"></a>
+                        <a href="https://github.com/luz-saldana/luz-saldana-jupiter" target="_blank" rel="noreferrer"><img class="icon-image" src="images/github-vector.png" alt="Clickeable Github Icon"></a>
                     </li>
                 </ul>
+        </section>
+        <section id="message-section">
+            <h2 class="section-header">Leave a Message</h2>
+            <div id="form-container">
+                <form name="leave_message">
+                <label for="usersName">Name:</label>
+                <input 
+                type="text"
+                name="usersName"
+                required=true
+                ><br>
+                <label for="usersEmail">Email:</label>
+                <input
+                type="email"
+                name="usersEmail"
+                required=true
+                ><br>
+                <label for="usersMessage">Message:</label>
+                <textarea
+                name="usersMessage"
+                required=true></textarea><br>
+                <button id="submit-button"
+                type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <section id="messages">
+            <h2 class="section-header">Messages</h2>
+            <ul></ul>
         </section>
         <script src="js/index.js"></script>
     </body>
