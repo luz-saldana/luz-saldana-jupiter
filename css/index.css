@@ -178,6 +178,7 @@ section {
     grid-template-rows: auto auto;
     justify-content: center;
     gap: 15px 15px;
+    margin-top: 5em;
 }
 
 .exp-item {
@@ -215,7 +216,7 @@ section {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 1em;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 5em;
@@ -223,9 +224,9 @@ section {
 
 #skills li {
     background-color: #e38233;
-    padding: 2em;
-    border-radius: 2em;
-    border: 1px solid #6a3207;
+    padding: 1em;
+    border-radius: 1em;
+    border: 2px solid #6a3207;
 }
 
 /* phone size - skills  */
@@ -238,6 +239,23 @@ section {
     }
 }
 
+#projects ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2em;
+    margin-top: 5em;
+    padding-left: 0;
+}
+
+#projects li {
+    background-color: rgba(110, 195, 223, 0.83);
+    padding: 1em;
+    border: 2px solid rgb(45, 103, 121);
+    border-radius: 1em;
+}
+
 #connect ul {
     list-style: none;
     display: flex;
@@ -248,6 +266,16 @@ section {
 .icon-image {
     width: 4em;
     height: auto;
+}
+
+#github-icon:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7); 
+    border-radius: 50%;
+}
+
+#linkedin-icon:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7);
+    border-radius: .5em;
 }
 
 /* phone size - Connect*/
@@ -279,6 +307,7 @@ section {
 #form-container {
     display: grid;
     place-items: center;
+    margin-top: 5em;
 }
 
 /* form styling */

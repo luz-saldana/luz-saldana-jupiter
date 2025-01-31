@@ -66,3 +66,23 @@ messageForm.addEventListener("submit", (event) => {
 // reset method //
     messageForm.reset();
 });
+
+
+const projectSection = document.getElementById('projects');
+const projectList = projectSection.querySelector('ul');
+
+// fetch request //
+fetch('https://api.github.com/users/luz-saldana/repos').then((response) => {
+    return response.json();
+}).then((repositories) => {
+    console.log(repositories);
+    for (let i = 0; i < repositories.length; i++) {
+        const project = repositories[i].name;
+        const li = document.createElement('li');
+        li.innerText = project;
+
+        projectList.appendChild(li);
+    }
+}).catch((error) => {
+    console.error("An error ocurred", error);
+});
