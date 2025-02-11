@@ -28,6 +28,8 @@ for (let s of skills) {
 //message form //
 const messageForm = document.querySelector("[name='leave_message']");
 const messageSection = document.getElementById('message-section');
+const hiddenMessages = document.getElementById("messages");
+hiddenMessages.style.display = "none";
 
 // create a callback function that handles the message form submit //
 
@@ -63,6 +65,8 @@ messageForm.addEventListener("submit", (event) => {
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
 
+    hiddenMessages.style.display = "block";
+
 // reset method //
     messageForm.reset();
 });
@@ -79,7 +83,7 @@ fetch('https://api.github.com/users/luz-saldana/repos').then((response) => {
     for (let i = 0; i < repositories.length; i++) {
         const project = repositories[i].name;
         const li = document.createElement('li');
-        li.innerText = project;
+        li.innerHTML = `<a href="${repositories[i].html_url}" target="_blank" rel="noopener noreferrer">${project}</a>`;
 
         projectList.appendChild(li);
     }
