@@ -36,6 +36,10 @@ body {
 
 }
 
+#navigation a {
+    text-decoration: none;
+}
+
 /* tablet size - nav ul*/
 @media (max-width: 768px) and (min-width: 426px) {
 
@@ -256,6 +260,22 @@ section {
     border-radius: 1em;
 }
 
+#projects li:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7); 
+    background-color: rgba(149, 204, 222, 0.83);
+}
+
+#projects a {
+    text-decoration: none;
+    color: black;
+}
+@media(max-width: 375px) {
+    #projects ul {
+        justify-content: none;
+        flex-wrap: wrap;
+    }
+}
+
 #connect ul {
     list-style: none;
     display: flex;
@@ -274,6 +294,11 @@ section {
 }
 
 #linkedin-icon:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7);
+    border-radius: .5em;
+}
+
+#email-icon:hover {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7);
     border-radius: .5em;
 }
@@ -335,7 +360,7 @@ input {
 textarea {
     display: flex;
     width: 100%;
-    max-width: 30vw;
+    max-width: 90vw;
 }
 
 #submit-button {
